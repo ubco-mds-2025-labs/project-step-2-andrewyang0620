@@ -1,0 +1,62 @@
+[
+    {
+        "qid": 1,
+        "qtype": "MC",
+        "qtitle": "Geography",
+        "qtext": "What is the capital of France?",
+        "qanswer": "A",
+        "qoptions": [
+            "A: Paris",
+            "B: London",
+            "C: Berlin",
+            "D: Madrid"
+        ]
+    },
+    {
+        "qid": 2,
+        "qtype": "TF",
+        "qtitle": "Programming",
+        "qtext": "Python is a statically typed language.",
+        "qanswer": "F"
+    },
+    {
+        "qid": 3,
+        "qtype": "MC",
+        "qtitle": "Mathematics",
+        "qtext": "What is 2 + 2?",
+        "qanswer": "B",
+        "qoptions": [
+            "A: 3",
+            "B: 4",
+            "C: 5",
+            "D: 6"
+        ]
+    },
+    {
+        "qid": 4,
+        "qtype": "TF",
+        "qtitle": "Geography",
+        "qtext": "The Nile is the longest river in the world.",
+        "qanswer": "T"
+    },
+    {
+        "qid": 5,
+        "qtype": "SA",
+        "qtitle": "History",
+        "qtext": "Who was the first president of the United States?",
+        "qanswer": "George Washington"
+    },
+    {
+        "qid": "abf7c0e0",
+        "qtype": "MC",
+        "qtitle": "Sample Question",
+        "qtext": "test1",
+        "qanswer": "A",
+        "qoptions": [
+            "A: answer is this",
+            "B: na",
+            "C: na",
+            "D: na"
+        ]
+    }
+]

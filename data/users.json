@@ -1,0 +1,42 @@
+[
+  {
+    "user_id": "ffdf24d3",
+    "name": "jingtao",
+    "age": 23,
+    "email": "aaa@gmail.com",
+    "grades": [],
+    "profile_level": "premium"
+  },
+  {
+    "user_id": "78fefa98",
+    "name": "emily",
+    "age": 20,
+    "email": "eee@gmail.com",
+    "grades": [],
+    "profile_level": "regular"
+  },
+  {
+    "user_id": "86e7ffa6",
+    "name": "bob",
+    "age": 24,
+    "email": "jjjf",
+    "grades": [],
+    "profile_level": "regular"
+  },
+  {
+    "user_id": "eceba787",
+    "name": "q",
+    "age": 0,
+    "email": "w",
+    "grades": [],
+    "profile_level": "regular"
+  },
+  {
+    "user_id": "d20d649f",
+    "name": "Xixiao",
+    "age": 10,
+    "email": "chouxi@gmail.com",
+    "grades": [],
+    "profile_level": "premium"
+  }
+]
