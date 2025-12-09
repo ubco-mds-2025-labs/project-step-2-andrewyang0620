@@ -87,9 +87,36 @@ QuizzingApp/
 - `test_to_json_and_get_json_roundtrip(self)`
 - `test_register_user_premium_and_invalid_age(self)`
 ### test_session.py
+- `def setUpClass(cls)`
+- `def tearDownClass(cls)`
+- `def setUp(self)`
+- `def tearDown(self)`
+- `test_Initialization(self)`
+- `test_CalculateTime`
+- `test_ToDict(self)`
+- `test_SubmitAnswer(self)`
+- `test_GetAndNextQuestion(self)`
+- `test_PickQuestions(self)`
+- `test_LoadHelpers(self)`
+- `test_AskQuestions(self, mock_input)`
+- `test_SelectUser(self, mock_input)`
+- `test_SubmitAnswerOOR(self)`
 ### test_result.py
+- `def setUpClass(cls)`
+- `def tearDownClass(cls)`
+- `def setUp(self)`
+- `def tearDown(self)`
+- `test_Percentage(self)`
+- `test_ToDict(self)`
+- `test_ToJSON(self)`
+- `test_TypeChart(self, pie, show)`
+- `test_TypeCorrectBar(self, subplots, show)`
+- `test_SaveResult(self, mock_exists, mock_getsize, mock_file, mock_dump)`
 ## Instruction to Run Tests
-
+```
+cd tests
+python -m unittest test_suite.py
+```
 -------
 # Previous README contents for step 1:
 Our project is designed to be a Quizzing App that supports the full lifecycle of quiz creation, user management, quiz execution, scoring, and visualization. 
