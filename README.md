@@ -1,9 +1,124 @@
 # Quizzing App DATA533
+### This is the repo of step 2
 This is the repo for DATA 533 Project Group 3
 
-
 Group 3 Mebmers: ***Jingtao Yang***, ***Yiran Wang***, ***Zihao Zhao***
-
+# New updates for step 2:
+## Updated Structure
+```
+QuizzingApp/
+│
+├── README.md
+├── .gitignore
+│
+├── data/                   # all storage JSON files
+│   ├── questions.json
+│   ├── users.json
+│   └── sessions.json
+│
+├── docs/
+│   ├── project description.pdf  # task 2 
+│
+├── quizzingapp/
+│   ├── __init__.py
+│   |
+│   ├── questionbase/        # Sub-Package 1
+│   │   ├── __init__.py
+│   │   ├── questions.py
+│   │   └── manage_question.py
+│   |
+│   ├── userprofile/         # Sub-Package 2
+│   │   ├── __init__.py
+│   │   ├── user.py
+│   │   └── manage_user.py
+│   |
+│   └── quizsession/         # Sub-Package 3
+│       ├── __init__.py
+│       ├── session.py
+│       └── result.py
+│
+├── tests/                   # unit tests   
+│   ├── __init__.py
+|   ├── test_suite.py        # the main test suite to run all tests
+|   ├── test_question.py
+|   ├── test_question_manager.py
+|   ├── test_user.py
+|   ├── test_user_manager.py
+|   ├── test_session.py
+|   └── test_result.py
+|
+└── examples/               
+```
+## Test Cases Details
+### test_suite.py
+  Hold the collection of test classes, calls all the tests
+### test_question.py
+- `def setUpClass(cls)`
+- `def tearDownClass(cls)`
+- `def setUp(self)`
+- `def tearDown(self)`
+- `def test_setters_and_getters(self)`
+- `def test_display_checkanswer_toDict(self)`
+- `def test_mc_tf_sa_questions(self)`
+### test_question_manager.py
+- `def setUpClass(cls)`
+- `def tearDownClass(cls)`
+- `def setUp(self)`
+- `def tearDown(self)`
+- ` def test_add_delete_filter_get(self)`
+- `def test_toJson_and_getJson(self)`
+### test_user.py
+- `def setUpClass(cls)`
+- `def tearDownClass(cls)`
+- `def setUp(self)`
+- `def tearDown(self)`
+- `test_get_user_info_and_to_dict_initial_state(self)`
+- `test_set_user_info_partial_update(self)`
+- `test_add_score_and_get_avg_for_empty_and_non_empty(self)`
+- `test_regular_and_premium_user_profile_levels(self)`
+### test_user_manager.py
+- `def setUpClass(cls)`
+- `def tearDownClass(cls)`
+- `def setUp(self)`
+- `def tearDown(self)`
+- `test_create_user_regular_and_premium_and_invalid_type(self)`
+- `test_delete_user_and_get_user_behaviour(self)`
+- `test_delete_all_users_clears_state(self)`
+- `test_to_json_and_get_json_roundtrip(self)`
+- `test_register_user_premium_and_invalid_age(self)`
+### test_session.py
+- `def setUpClass(cls)`
+- `def tearDownClass(cls)`
+- `def setUp(self)`
+- `def tearDown(self)`
+- `test_Initialization(self)`
+- `test_CalculateTime`
+- `test_ToDict(self)`
+- `test_SubmitAnswer(self)`
+- `test_GetAndNextQuestion(self)`
+- `test_PickQuestions(self)`
+- `test_LoadHelpers(self)`
+- `test_AskQuestions(self, mock_input)`
+- `test_SelectUser(self, mock_input)`
+- `test_SubmitAnswerOOR(self)`
+### test_result.py
+- `def setUpClass(cls)`
+- `def tearDownClass(cls)`
+- `def setUp(self)`
+- `def tearDown(self)`
+- `test_Percentage(self)`
+- `test_ToDict(self)`
+- `test_ToJSON(self)`
+- `test_TypeChart(self, pie, show)`
+- `test_TypeCorrectBar(self, subplots, show)`
+- `test_SaveResult(self, mock_exists, mock_getsize, mock_file, mock_dump)`
+## Instruction to Run Tests
+```
+cd tests
+python -m unittest test_suite.py
+```
+-------
+# Previous README contents for step 1:
 Our project is designed to be a Quizzing App that supports the full lifecycle of quiz creation, user management, quiz execution, scoring, and visualization. 
 
 The key features are:
