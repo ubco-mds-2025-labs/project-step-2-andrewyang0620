@@ -52,7 +52,20 @@ QuizzingApp/
 ## Test Cases Details
 ### test_suite.py
 ### test_question.py
+- `def setUpClass(cls)`
+- `def tearDownClass(cls)`
+- `def setUp(self)`
+- `def tearDown(self)`
+- `def test_setters_and_getters(self)`
+- `def test_display_checkanswer_toDict(self)`
+- `def test_mc_tf_sa_questions(self)`
 ### test_question_manager.py
+- `def setUpClass(cls)`
+- `def tearDownClass(cls)`
+- `def setUp(self)`
+- `def tearDown(self)`
+- ` def test_add_delete_filter_get(self)`
+- `def test_toJson_and_getJson(self)`
 ### test_user.py
 ### test_user_manager.py
 ### test_session.py
