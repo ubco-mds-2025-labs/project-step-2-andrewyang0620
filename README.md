@@ -51,6 +51,7 @@ QuizzingApp/
 ```
 ## Test Cases Details
 ### test_suite.py
+  Hold the collection of test classes, calls all the tests
 ### test_question.py
 - `def setUpClass(cls)`
 - `def tearDownClass(cls)`
