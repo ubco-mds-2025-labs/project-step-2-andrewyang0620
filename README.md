@@ -68,10 +68,26 @@ QuizzingApp/
 - ` def test_add_delete_filter_get(self)`
 - `def test_toJson_and_getJson(self)`
 ### test_user.py
+- `def setUpClass(cls)`
+- `def tearDownClass(cls)`
+- `def setUp(self)`
+- `def tearDown(self)`
+- `test_get_user_info_and_to_dict_initial_state(self)`
+- `test_set_user_info_partial_update(self)`
+- `test_add_score_and_get_avg_for_empty_and_non_empty(self)`
+- `test_regular_and_premium_user_profile_levels(self)`
 ### test_user_manager.py
+- `def setUpClass(cls)`
+- `def tearDownClass(cls)`
+- `def setUp(self)`
+- `def tearDown(self)`
+- `test_create_user_regular_and_premium_and_invalid_type(self)`
+- `test_delete_user_and_get_user_behaviour(self)`
+- `test_delete_all_users_clears_state(self)`
+- `test_to_json_and_get_json_roundtrip(self)`
+- `test_register_user_premium_and_invalid_age(self)`
 ### test_session.py
 ### test_result.py
-
 ## Instruction to Run Tests
 
 -------
